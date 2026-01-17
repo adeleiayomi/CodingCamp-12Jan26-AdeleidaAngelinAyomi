@@ -1,28 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<hr lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Adeleida</title>
-
-    <!-- CSS External -->
+    <title>Portfolio Adeleida</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<hr>
 
-<body>
+    <nav class="navbar">
+        <div class="logo">My Portofolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">My Profile</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#message">Message Us</a></li>
+        </ul>
+    </nav>
 
-    <!-- Header Content -->
-    <header></header>
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 id="welcome-title">Hi <span id="user-name">Guest</span>, Welcome To My Website</h1>
+            <p>Ini adalah website latihan pertama sebagai Software Engineer</p>
+        </div>
+    </header>
+    <hr />
+    <section id="profile" class="section">
+        <h2>My Profile</h2>
+        <div class="profile-container">
+            <div class="profile-card">
+                <h3>About Me</h3>
+                <p>Saya adalah seorang Beginner Software Engineer.</p>
+            </div>
+            <div class="profile-card">
+                <h3 class="text-lg font-bold text-blue-600 mb-2">My Focus</h3>
+                <p class="text-gray-700">
+                    Saat ini fokus saya ingin mengembangkan keahlian di bidang <strong>Front-End Development</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <section id="skills" class="section gray-bg">
+        <h2>Skills & Expertise</h2>
+        <div class="facilitation-grid">
+            <div class="fac-item">
+                <p>JavaScript Development</p>
+            </div>
+            <div class="fac-item">
+                <p>Frontend Design (HTML/CSS)</p>
+            </div>
+            <div class="fac-item">
+                <p>Logical Thinking</p>
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <section id="message" class="section">
+        <h2>Message Us</h2>
+        <div class="message-container">
+            <form id="message-form" class="form-box">
+                <div class="input-group">
+                    <label>Nama</label>
+                    <input type="text" id="input-nama" placeholder="Masukkan Nama" required>
+                </div>
+                <div class="input-group">
+                    <label>Tanggal Lahir</label>
+                    <input type="date" id="input-tgl" required>
+                </div>
+                <div class="input-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <label class="radio-label"><input type="radio" name="gender" value="Laki-Laki" checked> Laki-Laki</label>
+                        <label class="radio-label"><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Pesan</label>
+                    <textarea id="input-pesan" placeholder="Tulis pesan atau pertanyaan Anda di sini..." rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
 
-    <!-- Main Content -->
-    <main></main>
-    
-    <!-- Footer Content -->
-    <footer></footer>
+            <div class="result-box">
+                <p id="current-time" style="font-size: 0.8em; color: #666; margin-bottom: 10px;"></p>
+                <div id="display-result">
+                    <p><strong>Nama:</strong> -</p>
+                    <p><strong>Tanggal Lahir:</strong> -</p>
+                    <p><strong>Jenis Kelamin:</strong> -</p>
+                    <p><strong>Pesan:</strong> -</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Javascript External -->
+    <footer>
+        <p>Created By Adeleida | © 2026</p>
+    </footer>
+
     <script src="js/script.js"></script>
-
 </body>
-
 </html>

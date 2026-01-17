@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 1px solid #ddd;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li { margin-left: 10px; }
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #666;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+/* Hero Section */
+.hero-section {
+    padding: 100px 5%;
+    text-align: center; 
+    background-color: #fff;
+    min-height: 50vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.section { padding: 50px 5%; text-align: center; }
+.gray-bg { background-color: #f9f9f9; }
+
+.facilitation-grid, .profile-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.profile-card {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 1px solid #eee;
+    background: white;
+    text-align: left;
+}
+
+.message-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.form-box, .result-box {
+    flex: 1;
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: left;
+}
+
+.input-group { margin-bottom: 15px; }
+.input-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.input-group input[type="text"], 
+.input-group input[type="date"], 
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.radio-group { display: flex; gap: 20px; padding: 5px 0; }
+
+button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover { background: #555; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; gap: 15px; }
+    .nav-links { flex-wrap: wrap; justify-content: center; }
+    .message-container { flex-direction: column; }
+}
